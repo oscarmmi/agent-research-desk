@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme inline {
+    --font-sans:
+        Instrument Sans, ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+}
+
+html {
+    background: #f5f6f4;
+}
+
+body {
+    min-width: 320px;
+}
+
+::selection {
+    background: #d6e7db;
+    color: #17382d;
+}
+
+.brief-copy {
+    overflow-wrap: anywhere;
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
